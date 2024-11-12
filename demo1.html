@@ -6,15 +6,38 @@
 </head>
   <body>
     my ip : <span id="spanmyip"></span>
+    <br><br>
+    <span id="spanmyip2"></span>
 <hr>
     demo php html
 
-    <script>
-      $(document).ready(function(){
 
-        $("#spanmyip").html("test");
-        
-      });
+    <script>
+$(document).ready(function(){
+    $.ajax({
+  dataType: "json",
+  url: "https://api.ipify.org?format=json",
+  data: {},
+  success: function(data){
+    var v_data = JSON.parse(JSON.stringify(data));  
+    $("#spanmyip2").html(v_data.ip);
+  }
+});
+});
+
+
+          document.addEventListener("DOMContentLoaded", function() {
+            // Fetch the IP address from the API
+            fetch("https://api.ipify.org?format=json")
+                .then(response => response.json())
+                .then(data => {
+                    // Display the IP address on the screen
+                    document.getElementById("spanmyip").textContent = data.ip;
+                })
+                .catch(error => {
+                    console.error("Error fetching IP address:", error);
+                });
+        });
     </script>
   </body>
   
