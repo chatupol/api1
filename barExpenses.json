@@ -1,0 +1,4 @@
+{
+        labels: ["Establishment", "Personnel", "Admin", "Communication","Renovation"],
+        data: [1966821, 312866, 282013, 48671,56350]
+    }
