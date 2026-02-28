@@ -1,14 +1,20 @@
-[
-  {
-    "id": 1,
-    "title": "Post 1"
+{
+  "monthly": {
+    "labels": ["Dec 24", "Jan 25", "Feb 25", "Mar 25", "Apr 25", "May 25", "Jun 25", "Jul 25", "Aug 25", "Sep 25", "Oct 25", "Nov 25", "Dec 25", "Jan 26"],
+    "data": [91800, 200200, 15072, 561820, 80396, 158505, 81125, 290370, 443713, 138015, 183154, 114517, 156473, 96101]
   },
-  {
-    "id": 2,
-    "title": "Post 2"
+  "semiMonthly": {
+    "labels": ["Dec 16-31", "Jan 01-15", "Jan 16-31", "Feb 16-28", "Mar 01-15", "Mar 16-31"],
+    "data": [91800, 200200, 0, 15072, 175695, 386125]
   },
-  {
-    "id": 3,
-    "title": "Post 3"
-  }
-]
+  "subExpenses": {
+    "labels": ["Rental of Office", "Salaries", "Mgmt Fees", "Furniture", "Communication", "Renovation", "Office Reno", "Onboarding", "Utilities", "Consultants"],
+    "data": [776591, 297126, 269785, 212513, 119856, 107385, 106037, 99000, 85600, 56350]
+  },
+  "transactions": [
+    { "d": "2026-01-12", "c": "Personnel_Exp", "s": "Salaries", "v": 51234.19 },
+    { "d": "2026-01-12", "c": "GeneralAdmin_Exp", "s": "Mgmt Consultant Fees", "v": 11840.00 },
+    { "d": "2025-12-15", "c": "Establishment_Exp", "s": "Rental of Office", "v": 8500.00 },
+    { "d": "2025-11-20", "c": "Communication_Exp", "s": "Internet", "v": 3258.97 }
+  ]
+}
