@@ -1,0 +1,4 @@
+{
+        labels: ["Rental of Office", "Salaries", "Mgmt Fees", "Furniture", "Communication", "Renovation", "Office Reno", "Onboarding", "Utilities", "Consultants"],
+        data: [776591, 297126, 269785, 212513, 119856, 107385, 106037, 99000, 85600, 56350]
+    }
